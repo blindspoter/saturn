@@ -1,0 +1,31 @@
+# py
+*.pyc
+*~
+*.egg-info
+# editor
+*.sw[opnlm]
+
+# C extensions
+*.so
+
+.DS_Store
+.coverage
+.cache
+
+# in dev
+/venv
+/tmp
+/.env
+
+# Distribution / packaging
+.Python
+/env
+/dist
+/build
+/eggs/
+/.eggs/
+/sdist
+/*.egg-info
+/*.egg
+/docs/_build
+/htmlcov

@@ -1,0 +1,14 @@
+# --index-url=http://devpi.letv.cn/gcp/pypi
+
+# lint
+flake8==2.2.5
+pep8==1.5.7
+
+# unit test
+pytest
+
+# integration test
+splinter
+
+# doc
+sphinx<1.4.0

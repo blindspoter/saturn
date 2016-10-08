@@ -1,0 +1,5 @@
+# --index-url=http://devpi.letv.cn/gcp/pypi
+
+honcho>=0.6.5
+ipython>=2.0
+pip-tools>=1.7.0

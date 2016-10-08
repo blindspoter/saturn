@@ -1,0 +1,8 @@
+NAME=saturn
+
+MM_LOG_DIR=/var/log/$NAME
+USER=root
+GROUP=root
+PIDDIR=/var/run/$NAME
+PIDFILE=$PIDDIR/$NAME.pid
+SCRIPTNAME=/etc/init.d/$NAME
