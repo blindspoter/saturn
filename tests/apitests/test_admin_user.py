@@ -9,14 +9,14 @@ PASSWORD = '123456'
 
 
 class AdminUserTest(BaseTestCase):
-    def test_adminuser_create(self):
-        url = self.api_prefix + '/adminuser/create'
+    def test_admin_user_create(self):
+        url = self.api_prefix + '/admin/user/create'
         params = {'username': USERNAME, 'password': PASSWORD}
 
         response = requests.post(url, params=params)
         assert response.status_code == 200
 
-    def test_adminuser_delete(self):
-        url = self.api_prefix + '/adminuser/{name}/delete'.format(name=USERNAME)
+    def test_admin_user_delete(self):
+        url = self.api_prefix + '/admin/user/{name}/delete'.format(name=USERNAME)
         response = requests.delete(url)
         assert response.status_code == 200

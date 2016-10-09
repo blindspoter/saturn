@@ -2,7 +2,7 @@
 
 from .framework import BaseTestCase
 
-from saturn.models.adminuser import AdminUser
+from saturn.models.admin_user import AdminUser
 from saturn.models.consts import ADMINUSER_STATUS
 
 
@@ -13,7 +13,7 @@ NEW_NAME = "updatetestuser"
 
 
 class AdminUserTest(BaseTestCase):
-    def test_adminuser_add(self):
+    def test_admin_user_add(self):
         user = AdminUser.add(NAME, PWD)
         assert user
         assert user.name == NAME
@@ -27,7 +27,7 @@ class AdminUserTest(BaseTestCase):
         u = AdminUser.get(user.id)
         assert not u
 
-    def test_adminuser_update(self):
+    def test_admin_user_update(self):
         user = AdminUser.add(NAME, PWD)
         assert user
         new_user = user.update(NEW_NAME)

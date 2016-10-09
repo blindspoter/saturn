@@ -3,8 +3,8 @@
 import os
 import sys
 
-from unittest import TestCase
 from envcfg.json.saturn import HTTPS_SERVER
+from unittest import TestCase
 
 
 TEST_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf8')
 
 class BaseTestCase(TestCase):
     http_server = HTTPS_SERVER
-    api_prefix = '{server}/api/v1'.format(server=http_server)
+    api_prefix = '{server}/v1'.format(server=http_server)
 
     def setUp(self):
         pass
