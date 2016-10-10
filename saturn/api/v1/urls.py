@@ -10,5 +10,5 @@ handlers = [
     (r"/ping", Ping),
 
     (r"/v1/admin/user/create", AdminUserCreate),
-    (r"/v1/adminuser/(.*)/delete", AdminUserDelete)
+    (r"/v1/admin/user/(.*)/delete", AdminUserDelete)
 ]

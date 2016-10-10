@@ -1,1 +1,1 @@
-web: python manage.py --port=5000 --debug=True
+api: python manage.py --port=5000 --debug=True

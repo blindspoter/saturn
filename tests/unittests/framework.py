@@ -2,6 +2,7 @@
 
 import os
 import sys
+
 from unittest import TestCase
 
 TEST_DIR = os.path.dirname(os.path.realpath(__file__))

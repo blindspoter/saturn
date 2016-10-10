@@ -3,8 +3,8 @@
 import os
 import sys
 
-from envcfg.json.saturn import HTTPS_SERVER
 from unittest import TestCase
+from envcfg.json.saturn import HTTPS_SERVER
 
 
 TEST_DIR = os.path.dirname(os.path.realpath(__file__))

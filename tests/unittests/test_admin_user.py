@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from .framework import BaseTestCase
-
 from saturn.models.admin_user import AdminUser
 from saturn.models.consts import ADMINUSER_STATUS
 
+from .framework import BaseTestCase
 
 NAME = "testuser"
 PWD = "testtest"

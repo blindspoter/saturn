@@ -7,6 +7,9 @@ from.exceptions import ArgumentError, CreatedError
 
 
 class AdminUserCreate(RequestHandler):
+
+    # /v1/admin/user/create
+
     def post(self):
         args = self.request.arguments
         name = args.get("username")
@@ -23,6 +26,9 @@ class AdminUserCreate(RequestHandler):
 
 
 class AdminUserDelete(RequestHandler):
+
+    # /v1/admin/user/(.*)/delete
+
     def delete(self, username):
         if not username:
             raise ArgumentError
