@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+import json
+
 from tornado.web import RequestHandler
 from saturn.models.adminuser import AdminUser
 
@@ -11,9 +13,9 @@ class AdminUserCreate(RequestHandler):
     # /v1/admin/user/create
 
     def post(self):
-        args = self.request.arguments
-        name = args.get("username")
-        pwd = args.get("password")
+        body = json.loads(self.request.body, encoding='utf-8')
+        name = body.get("username")
+        pwd = body.get("password")
         if not name or not pwd:
             raise ArgumentError
 
