@@ -3,7 +3,7 @@
 import json
 
 from tornado.web import RequestHandler
-from saturn.models.adminuser import AdminUser
+from saturn.models.admin_user import AdminUser
 
 from.exceptions import ArgumentError, CreatedError
 
