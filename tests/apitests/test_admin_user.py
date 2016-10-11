@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import json
 import requests
 
 from .framework import BaseTestCase
@@ -11,9 +12,9 @@ PASSWORD = '123456'
 class AdminUserTest(BaseTestCase):
     def test_admin_user_create(self):
         url = self.api_prefix + '/admin/user/create'
-        params = {'username': USERNAME, 'password': PASSWORD}
+        data = {'username': USERNAME, 'password': PASSWORD}
 
-        response = requests.post(url, params=params)
+        response = requests.post(url, data=json.dumps(data))
         assert response.status_code == 200
 
     def test_admin_user_delete(self):
