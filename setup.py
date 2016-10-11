@@ -33,7 +33,7 @@ def get_requirements():
                 if line and not line.startswith(('#', '--'))],
 
 setup(
-    name='Saturn',
+    name='saturn',
     version=get_version(),
     author='Saturn Team',
     author_email='saturn@le.com',
