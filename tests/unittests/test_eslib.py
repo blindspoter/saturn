@@ -2,12 +2,12 @@
 
 from datetime import datetime
 
-from saturn.libs.es.es import es
+from saturn.libs.es.store import es
 
 from .framework import BaseTestCase
 
 
-class LibEsTest(BaseTestCase):
+class EslibTest(BaseTestCase):
     def test_es(self):
         doc = {
             'author': 'kimchy',
