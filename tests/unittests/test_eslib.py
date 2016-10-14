@@ -17,3 +17,5 @@ class EslibTest(BaseTestCase):
 
         result = es.add("test_index", "tweet", doc)
         self.assertEqual(True, result.get('created'))
+        result = es.add("test_index", "tweet", doc)
+        self.assertEqual(True, result.get('created'))

@@ -11,6 +11,7 @@ clean:
 	@find . -name '__pycache__' -type d -delete
 	@find . -type d -empty -delete
 	@rm -rf build dist htmlcov
+	@rm -rf .cache
 
 compile-deps:
 	@pip-compile --output-file requirements/base.txt requirements/base.in
