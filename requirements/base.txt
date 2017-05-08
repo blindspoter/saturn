@@ -4,6 +4,9 @@
 #
 #    pip-compile --output-file requirements/base.txt requirements/base.in
 #
+--index-url http://pypi.douban.com/simple/
+--trusted-host pypi.douban.com
+
 backports-abc==0.4        # via tornado
 certifi==2016.9.26        # via tornado
 click==6.6                # via plan

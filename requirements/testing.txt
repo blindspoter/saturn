@@ -4,6 +4,9 @@
 #
 #    pip-compile --output-file requirements/testing.txt requirements/testing.in
 #
+--index-url http://pypi.douban.com/simple/
+--trusted-host pypi.douban.com
+
 alabaster==0.7.9          # via sphinx
 babel==2.3.4              # via sphinx
 docutils==0.12            # via sphinx

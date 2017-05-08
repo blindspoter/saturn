@@ -4,6 +4,9 @@
 #
 #    pip-compile --output-file requirements/dev.txt requirements/dev.in
 #
+--index-url http://pypi.douban.com/simple/
+--trusted-host pypi.douban.com
+
 appdirs==1.4.3            # via setuptools
 appnope==0.1.0            # via ipython
 backports.shutil-get-terminal-size==1.0.0  # via ipython
