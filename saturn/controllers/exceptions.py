@@ -5,12 +5,12 @@ err_invalid_name = (1001, 'err_invalid_name')
 
 
 class BaseError(Exception):
-
     """
-    The base exception of Error
+    The base exception of Error.
     """
 
     def __init__(self, error):
+        super(BaseError, self).__init__()
         self.errno = error[0]
         self.errmsg = error[1]
 
@@ -18,15 +18,9 @@ class BaseError(Exception):
         return 'BaseError[errno:%s; errmsg:%s;]' % (self.errno, self.errmsg)
 
 
-class ClusterCreateError(BaseError):
-    def __str__(self):
-        return 'ClusterCreateError[errno:%s errmsg:%s]' % (self.errno, self.errmsg)
-
-
 class ValidationError(Exception):
-
     """
-    The base exception of validation
+    The base exception of validation.
     """
 
 
